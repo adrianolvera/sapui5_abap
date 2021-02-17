@@ -1,0 +1,27 @@
+<mvc:View controllerName="Proyecto3.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<Shell>
+	<App>
+		<pages>
+			<Page title="Titulo 1">
+				<content>
+					<Panel headerText="Panel 1" class="sapUIResponsiveMargin" width="auto">
+						<content>
+							<Button text="Button" press=".onShowHello" class="sapUISmallMarginEnd"></Button>
+							<Input value="{/recipient/name}"
+								   description="Hello {/recipient/name}"
+						      		width="60%"
+					                valueLiveUpdate="true">
+							</Input>
+							<Text text="Hola" class="sapUiSmallMargin boldElements"> </Text>
+						</content>
+					</Panel>
+					
+				</content>
+				
+			</Page>
+		</pages>
+	</App>
+	</Shell>
+
+</mvc:View>
